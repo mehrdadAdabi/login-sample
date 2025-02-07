@@ -1,0 +1,43 @@
+@import url('../fonts/index.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --darkGray: #212b36;
+  --primaryGreen: #00a76f;
+  --lightGray: #c4cdd5;
+  --mainFont: "Shabnam";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--mainFont) !important;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 8rem auto;
+  padding: 1rem;
+}
+
+/* direction */
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
