@@ -67,7 +67,7 @@ function Dashboard() {
     fetchData();
   }, [filteredJobs.page, filteredJobs.title]);
 
-  const paginationHandler = async (_, page: number) => {
+  const paginationHandler = async (_: any, page: number) => {
     setFilteredJobs((prevJobs) => ({
       ...prevJobs,
       page: page,
