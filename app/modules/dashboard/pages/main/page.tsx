@@ -1,14 +1,12 @@
 "use client";
-import BaseInput from "@/app/components/base/input/input";
-import BaseMenu from "../../components/Menu/menu.component";
 import { useEffect, useState } from "react";
 import { InputAdornment, Pagination } from "@mui/material";
 import { Search } from "@mui/icons-material";
 import useAxios from "@/app/service/axiosInstance";
 import { auth_routes } from "@/app/routes/route";
-import SkeletonComponent from "@/app/components/base/Skeleton/skeleton";
 import CardComponent from "../../components/Card/card.component";
 import { FilteredJobs } from "../../types/dashboard.type";
+import { SkeletonComponent, BaseInput } from "@/app/components/base";
 
 function Dashboard() {
   const [openMenu, setOpenMenu] = useState(false);

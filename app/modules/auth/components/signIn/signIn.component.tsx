@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { BaseButton } from "@/app/components/base/index";
+import { BaseButton, BaseInput } from "@/app/components/base/index";
 import Image from "next/image";
 import bannerImg from "@/app/public/images/login.png";
-import BaseInput from "@/app/components/base/input/input";
 import Link from "next/link";
 import { authMessage } from "../../constant/auth.constant";
 import { setInLocalStorage, validateEmailOrPhone } from "@/app/lib/utils";
